@@ -16,7 +16,7 @@ const logLengthInt = Number(logLength)
 const weightCapacity = 1100
 const logDensity = 20
 
-let numberOfLogs = weightCapacity / logDensity / logLengthInt
+const numberOfLogs = weightCapacity / logDensity / logLengthInt
 
 console.log(`${numberOfLogs} logs can fit into the truck`)
 
