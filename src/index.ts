@@ -10,13 +10,13 @@ import promptSync from 'prompt-sync'
 
 const prompt = promptSync()
 
+const WEIGHT_CAPACITY = 1100
+const LOG_DENSITY = 20
+
 const logLength = prompt('Enter the length of the maple logs (m): ')
 const logLengthInt = parseInt(logLength)
 
-const weightCapacity = 1100
-const logDensity = 20
-
-const numberOfLogs = weightCapacity / logDensity / logLengthInt
+const numberOfLogs = WEIGHT_CAPACITY / LOG_DENSITY / logLengthInt
 
 console.log(`${numberOfLogs} logs can fit into the truck`)
 
